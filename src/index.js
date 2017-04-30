@@ -10,14 +10,6 @@ import notes from './reducers';
 
 const store = createStore(notes, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-// store.subscribe(() => {
-//     console.log('subscribe', store.getState());
-// });
-//
-// store.dispatch({
-//     type: 'ADD_NOTE',
-//
-// });
 
 
 ReactDOM.render(
