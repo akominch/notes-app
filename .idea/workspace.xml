@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="120be256-f769-43bd-8176-91312153a59b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NotesApp.js" afterPath="$PROJECT_DIR$/src/NotesApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action.js" afterPath="$PROJECT_DIR$/src/action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers.js" afterPath="$PROJECT_DIR$/src/reducers.js" />
     </list>
     <ignored path="reactlesson.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotesApp.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NotesApp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NotesApp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -74,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -136,12 +134,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/NotesEditor.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/NotesGrid.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/action.js" />
         <option value="$PROJECT_DIR$/src/reducers.js" />
         <option value="$PROJECT_DIR$/src/NotesApp.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -325,7 +323,7 @@
       <workItem from="1493402264140" duration="1927000" />
       <workItem from="1493462524129" duration="9287000" />
       <workItem from="1493539232988" duration="4728000" />
-      <workItem from="1494058868877" duration="9334000" />
+      <workItem from="1494058868877" duration="9449000" />
     </task>
     <task id="LOCAL-00001" summary="Test WS">
       <created>1493572626248</created>
@@ -334,11 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493572626248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Notes add with Redux">
+      <created>1494081606154</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1494081606154</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26638000" />
+    <option name="totallyTimeSpent" value="26753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-55" y="1080" width="1920" height="1080" extended-state="0" />
@@ -376,7 +381,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test WS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test WS" />
+    <MESSAGE value="Notes add with Redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notes add with Redux" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -581,14 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Note.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -651,6 +649,14 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
