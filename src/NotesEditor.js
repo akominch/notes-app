@@ -29,8 +29,7 @@ class NotesEditor extends React.Component {
         var newNote = {
             text: this.state.text,
             name: this.state.name,
-            color: this.state.color,
-            id: Date.now()
+            color: this.state.color
         };
         this.props.onNoteAdd(newNote);
         this.setState({ 

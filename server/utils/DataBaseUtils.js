@@ -16,7 +16,7 @@ export function listNotes(id) {
 
 export function createNote(data) {
     const note = new Note({
-        title: data.title,
+        name: data.name,
         text: data.text,
         color: data.color,
         createdAt: new Date()

@@ -32,7 +32,7 @@ class NotesGrid extends React.Component {
 
                         return (
                             <Note 
-                                key={note.id}
+                                key={note._id}
                                 onDelete={onNoteDelete.bind(null, note)}
                                 color={note.color}
                                 name={note.name}>

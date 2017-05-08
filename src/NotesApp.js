@@ -4,23 +4,14 @@ import NotesGrid from './NotesGrid';
 import { connect } from 'react-redux';
 import { addNote, addListNote, deleteNote } from './action';
 
+import api from './api';
+
 class NotesApp extends React.Component{
-/*
-    constructor(props) {
-        super(props);
-        this.state = {
-            notes: [],
-        };
-    }
-*/
 
     componentDidMount = () => {
-        var localNotes = JSON.parse(localStorage.getItem('notes'));
-        if (localNotes) {
-            //this.setState({ notes: localNotes });
-            this.props.onAddListNote(localNotes);
-        }
-
+        api.listNotes()
+            .then(({ data }) => this.props.onAddListNote(data))
+            .catch(err => console.log(err));
 
     };
 
@@ -30,18 +21,23 @@ class NotesApp extends React.Component{
             return note.id !== noteId;
         });
         this.setState({ notes: newNotes });*/
-      this.props.onDeleteNote(note);
+        // this.props.onDeleteNote(note._id);
+        api.deleteNote(note._id)
+            .then(() => api.listNotes()
+                .then(({ data }) => this.props.onAddListNote(data))
+                .catch(err => console.log(err)))
+            .catch(err => console.log(err));
+        //Надо сделать нормальный редьюсер для удаления заметки
     };
 
     componentDidUpdate = () => {
-        this._updateLocalStorage();
+        //this._updateLocalStorage();
     };
 
     handleNoteAdd = (newNote) => {
-      /*  var newNotes = this.state.notes.slice();
-        newNotes.unshift(newNote);
-        this.setState({ notes: newNotes });*/
-        this.props.onAddNote(newNote);
+        api.createNote(newNote)
+            .then(() => this.props.onAddNote(newNote))
+            .catch(err => console.log(err));
     };
 
     render() {
@@ -55,10 +51,10 @@ class NotesApp extends React.Component{
         );
     };
 
-    _updateLocalStorage = () => {
-        var notes = JSON.stringify(this.props.notesStore);
-        localStorage.setItem('notes', notes);
-    }
+    // _updateLocalStorage = () => {
+    //     var notes = JSON.stringify(this.props.notesStore);
+    //     localStorage.setItem('notes', notes);
+    // }
 }
 export default connect(
     state => ({
