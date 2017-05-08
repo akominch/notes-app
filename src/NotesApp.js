@@ -2,7 +2,7 @@ import React from 'react';
 import NotesEditor from './NotesEditor';
 import NotesGrid from './NotesGrid';
 import { connect } from 'react-redux';
-import { addNote, addListNote } from './action';
+import { addNote, addListNote, deleteNote } from './action';
 
 class NotesApp extends React.Component{
 /*
@@ -30,6 +30,7 @@ class NotesApp extends React.Component{
             return note.id !== noteId;
         });
         this.setState({ notes: newNotes });*/
+      this.props.onDeleteNote(note);
     };
 
     componentDidUpdate = () => {
@@ -69,6 +70,9 @@ export default connect(
         },
         onAddListNote: (listNotes) => {
             dispatch(addListNote(listNotes));
+        },
+        onDeleteNote: (note) => {
+            dispatch(deleteNote(note));
         }
     })
 )(NotesApp);

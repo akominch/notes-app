@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.1",
+    "body-parser": "^1.17.1",
+    "classnames": "^2.2.5",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
@@ -10,12 +16,15 @@
     "masonry-layout": "^4.2.0",
     "react-redux": "^5.0.4",
     "react-scripts": "0.9.5",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "babel": "5.x",
+    "babel-loader": "5.x"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "babel-node server/app.js"
   }
 }
